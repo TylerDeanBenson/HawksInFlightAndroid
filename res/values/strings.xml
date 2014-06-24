@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HawksInFlight</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_open_gallery">OpenGallery</string>
+    <string name="title_activity_confirm_image">ConfirmImage</string>
+    <string name="introText">Click Browse to select a photo or click Camera to take a picture</string>
+    <string name="browse">Browse</string>
+    <string name="camera">Camera</string>
+    <string name="description">ImageSelected</string>
+    <string name="title_activity_open_camera">OpenCamera</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="confirmImageText">Use this Image?</string>
+    <string name="confirmImageDescription">The image selected by the user</string>
+    <string name="confirmYes">Yes</string>
+    <string name="confirmNo">No</string>
+    <string name="title_activity_final_submit">FinalSubmit</string>
+    <string name="finalImgDescription">Final Image to be Submitted to Flickr</string>
+    <string name="errorField" alt="This string will be edited when an error is found on submittion."> Error Field </string>
+    <string name="titleField">Title</string>
+    <string name="descriptionField">Description</string>
+    <string name="nameField">Name</string>
+    <string name="emailField">E-mail</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="title_activity_camera_test">CameraTest</string>
+    
+    <!-- Below are all the error messages that will be printed if a
+    	 field entered on the FinalSubmit .xml file is incorrectly 
+    	 formatted. 												-->
+	
+	<string name="incorrectTitle">Your title can only contain characters and numbers.</string>
+	<string name="incorrectName">Your name can only contain the charactes.</string>
+	<string name="incorrectEmail">Your email must be a @hartford.edu address.</string>
+	<string name="incorrectDescription">Your Description is too long!</string>
+	<string name="incorrectEverything">You cannot submit an empty form!</string>
+	<string name="correct">Form Submitted!</string>
+</resources>
