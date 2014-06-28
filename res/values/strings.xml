@@ -34,6 +34,7 @@
 	<string name="incorrectName">Your name can only contain the charactes.</string>
 	<string name="incorrectEmail">Your email must be a @hartford.edu address.</string>
 	<string name="incorrectDescription">Your Description is too long!</string>
+	<string name="incorrectNonHartfordEmail">You must use your @hartford.edu email address.</string>
 	<string name="incorrectEverything">You cannot submit an empty form!</string>
 	<string name="correct">Form Submitted!</string>
 </resources>

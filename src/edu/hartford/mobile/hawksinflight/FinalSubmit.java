@@ -64,21 +64,30 @@ public class FinalSubmit extends Activity
 		String descriptionText = description.getText().toString();
 		String emailText = email.getText().toString();
 		
+		titleText.toLowerCase();
+		nameText.toLowerCase();
+		descriptionText.toLowerCase();
+		emailText.toLowerCase();
+		
 		if(titleText.equals(""))
 		{
 			text.setText(R.string.incorrectTitle);
 		}
 		else if(nameText.equals(""))
 		{
-			text.setText(R.string.incorrectTitle);
+			text.setText(R.string.incorrectName);
 		}
 		else if(descriptionText.equals(""))
 		{
-			text.setText(R.string.incorrectTitle);
+			text.setText(R.string.incorrectDescription);
+		}
+		else if(emailText.endsWith("@hartford.edu"))
+		{
+			text.setText(R.string.incorrectNonHartfordEmail);
 		}
 		else if(emailText.equals(""))
 		{
-			text.setText(R.string.incorrectTitle);
+			text.setText(R.string.incorrectEmail);
 		}
 		else if(titleText.equals("") && nameText.equals("") &&
 			descriptionText.equals("") && emailText.equals(""))

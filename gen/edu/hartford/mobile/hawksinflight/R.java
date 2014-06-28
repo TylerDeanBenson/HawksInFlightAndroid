@@ -1270,7 +1270,7 @@ containing a value of this type.
         public static final int confirmImageText=0x7f0a0017;
         public static final int confirmNo=0x7f0a001a;
         public static final int confirmYes=0x7f0a0019;
-        public static final int correct=0x7f0a002a;
+        public static final int correct=0x7f0a002b;
         public static final int description=0x7f0a0014;
         public static final int descriptionField=0x7f0a001f;
         public static final int emailField=0x7f0a0021;
@@ -1279,8 +1279,9 @@ containing a value of this type.
         public static final int hello_world=0x7f0a0016;
         public static final int incorrectDescription=0x7f0a0028;
         public static final int incorrectEmail=0x7f0a0027;
-        public static final int incorrectEverything=0x7f0a0029;
+        public static final int incorrectEverything=0x7f0a002a;
         public static final int incorrectName=0x7f0a0026;
+        public static final int incorrectNonHartfordEmail=0x7f0a0029;
         /**  Below are all the error messages that will be printed if a
     	 field entered on the FinalSubmit .xml file is incorrectly 
     	 formatted. 												

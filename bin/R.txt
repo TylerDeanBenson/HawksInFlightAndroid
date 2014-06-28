@@ -368,7 +368,7 @@ int string confirmImageDescription 0x7f0a0018
 int string confirmImageText 0x7f0a0017
 int string confirmNo 0x7f0a001a
 int string confirmYes 0x7f0a0019
-int string correct 0x7f0a002a
+int string correct 0x7f0a002b
 int string description 0x7f0a0014
 int string descriptionField 0x7f0a001f
 int string emailField 0x7f0a0021
@@ -377,8 +377,9 @@ int string finalImgDescription 0x7f0a001c
 int string hello_world 0x7f0a0016
 int string incorrectDescription 0x7f0a0028
 int string incorrectEmail 0x7f0a0027
-int string incorrectEverything 0x7f0a0029
+int string incorrectEverything 0x7f0a002a
 int string incorrectName 0x7f0a0026
+int string incorrectNonHartfordEmail 0x7f0a0029
 int string incorrectTitle 0x7f0a0025
 int string introText 0x7f0a0011
 int string nameField 0x7f0a0020
