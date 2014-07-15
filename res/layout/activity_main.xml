@@ -1,48 +1,69 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF0000"
+    android:fadingEdge="vertical|horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.hartford.mobile.hawksinflight.MainActivity$PlaceholderFragment" >
+    tools:context="com.example.layouttest.LayoutActivity$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/introText" />
+        android:layout_margin="3dp"
+        android:background="@drawable/customborder"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="5dp"
+        android:orientation="vertical"
+        android:padding="1dp" >
 
-    <Button
-        android:id="@+id/camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/browse"
-        android:layout_below="@+id/browse"
-        android:text="@string/camera"
-        android:onClick="openCamera" />
+        <TableRow
+            android:id="@+id/row0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textborderbox" >
 
-    <Button
-        android:id="@+id/browse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/intro"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:text="@string/browse"
-        android:onClick="openGallery" />
+            <TextView
+                android:id="@+id/userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/select"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/camera"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
-        android:contentDescription="@string/description"
-        android:src="@drawable/ic_launcher" />
+        </TableRow>
 
-</RelativeLayout>
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" >
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_margin="10dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/browse"
+                android:onClick="openGallery" />
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/camera"
+                android:onClick="openCamera" />
+        </TableRow>
+    </LinearLayout>
+
+</FrameLayout>

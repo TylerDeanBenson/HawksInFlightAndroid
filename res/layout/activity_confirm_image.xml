@@ -1,49 +1,79 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirmbody1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF0000"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.hartford.mobile.hawksinflight.ConfirmImage$PlaceholderFragment" >
+    tools:context="com.example.layouttest.ConfirmTest$PlaceholderFragment" >
 
-    <Button
-        android:id="@+id/no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="34dp"
-        android:layout_toRightOf="@+id/confirmImage"
-        android:text="@string/confirmNo"
-        android:onClick="onSelectionNo" />
+    <LinearLayout
+        android:id="@+id/confirmWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/no"
-        android:layout_alignBottom="@+id/no"
-        android:layout_toLeftOf="@+id/confirmImage"
-        android:text="@string/confirmYes"
-        android:onClick="onSelectionYes" />
+        <TableRow
+            android:id="@+id/confirmRow1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="0.91"
+            android:background="@drawable/customimagewindow"
+            android:gravity="center" >
+            
+            			<ImageView
+	                    android:id="@+id/confirmImage"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="100"
+	                    android:contentDescription="@string/description"
+	                    android:src="@drawable/ic_launcher" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/confirmText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/no"
-        android:layout_centerHorizontal="true"
-        android:text="@string/confirmImageText" />
+        <TableRow
+            android:id="@+id/confirmRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
 
-    <ImageView
-        android:id="@+id/confirmImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="126dp"
-        android:contentDescription="@string/confirmImageDescription"
-        android:src="@drawable/ic_launcher" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmImageText"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
-</RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/confirmRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSelectionYes"
+                android:text="@string/confirmYes" />
+
+            <Button
+                android:id="@+id/resetForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSelectionNo"
+                android:text="@string/confirmNo" />
+
+        </TableRow>
+    </LinearLayout>
+
+</FrameLayout>

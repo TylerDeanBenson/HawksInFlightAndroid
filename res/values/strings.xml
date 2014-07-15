@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_open_gallery">OpenGallery</string>
     <string name="title_activity_confirm_image">ConfirmImage</string>
-    <string name="introText">Click Browse to select a photo or click Camera to take a picture</string>
+    <string name="select">Tap Browse To Upload a Photo from your photo library or tap Camera to take a picture for upload</string>
     <string name="browse">Browse</string>
     <string name="camera">Camera</string>
     <string name="description">ImageSelected</string>
@@ -33,7 +33,7 @@
 	<string name="incorrectTitle">Your title can only contain characters and numbers.</string>
 	<string name="incorrectName">Your name can only contain the charactes.</string>
 	<string name="incorrectEmail">Your email must be a @hartford.edu address.</string>
-	<string name="incorrectDescription">Your Description is too long!</string>
+	<string name="incorrectDescription">Your Description is too short!</string>
 	<string name="incorrectNonHartfordEmail">You must use your @hartford.edu email address.</string>
 	<string name="incorrectEverything">You cannot submit an empty form!</string>
 	<string name="correct">Form Submitted!</string>
